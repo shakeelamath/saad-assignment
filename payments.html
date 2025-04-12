@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Gateway</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CDN link for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .wrapper {
+      width: 550px;
+      padding: 20px;
+      background-color: #fff;
+      margin: 50px auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .title {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .row {
+      margin-bottom: 15px;
+    }
+    .row input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .button input {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+    }
+    .button input:hover {
+      background-color: #45a049;
+    }
+    .cancel-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="title">Payment</div>
+    <form action="#" method="post">
+      <div class="row">
+        <input type="text" placeholder="Card Number" required />
+      </div>
+      <div class="row">
+        <input type="text" placeholder="Cardholder Name" required />
+      </div>
+      <div class="row">
+        <input type="text" placeholder="MM/YY Expiry" required />
+      </div>
+      <div class="row">
+        <input type="text" placeholder="CVV" required />
+      </div>
+      <div class="row">
+        <input type="text" placeholder="Billing Address" required />
+      </div>
+      <div class="row button">
+        <input type="submit" value="Pay Now" />
+      </div>
+      <div class="cancel-link">
+        <a href="#">Cancel</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
